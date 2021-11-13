@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/RedditXml/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.19444444444444445" />
         <entry key="..\:/AndroidStudioProjects/RedditXml/app/src/main/res/layout/activity_main.xml" value="0.13405797101449277" />
-        <entry key="..\:/AndroidStudioProjects/RedditXml/app/src/main/res/layout/home_recyclerview_item.xml" value="0.4" />
+        <entry key="..\:/AndroidStudioProjects/RedditXml/app/src/main/res/layout/home_recyclerview_item.xml" value="0.35648148148148145" />
+        <entry key="..\:/AndroidStudioProjects/RedditXml/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.19739583333333333" />
       </map>
     </option>
   </component>

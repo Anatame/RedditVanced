@@ -1,14 +1,21 @@
 package com.anatame.redditxml.Presentation.Adapters
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.anatame.redditxml.R
 import com.anatame.redditxml.data.remote.PostDetail
+import com.bumptech.glide.Glide
+import com.bumptech.glide.Glide.with
+import com.bumptech.glide.GlideBuilder
+import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions.with
 
-class HomeRecyclerViewAdapter(private val dataSet: List<PostDetail>) :
+
+class HomeRecyclerViewAdapter(private val dataSet: List<PostDetail>, private val context: Context) :
     RecyclerView.Adapter<HomeRecyclerViewAdapter.ViewHolder>() {
 
     /**
@@ -17,6 +24,11 @@ class HomeRecyclerViewAdapter(private val dataSet: List<PostDetail>) :
      */
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val textView: TextView = view.findViewById(R.id.tv_subredditName)
+        val subredditIcon: ImageView = view.findViewById(R.id.iv_subredditIcon)
+        val postImage: ImageView = view.findViewById(R.id.iv_postImage)
+        val postTitle: TextView = view.findViewById(R.id.tv_postTitle)
+        val postDesc: TextView = view.findViewById(R.id.tv_postDescription)
+        val postAuthor: TextView = view.findViewById(R.id.tv_poster)
 
         init {
             // Define click listener for the ViewHolder's View.
@@ -37,7 +49,14 @@ class HomeRecyclerViewAdapter(private val dataSet: List<PostDetail>) :
 
         // Get element from your dataset at this position and replace the
         // contents of the view with that element
+        Glide.with(context)
+            .load(dataSet[position].thumbnail)
+            .into(viewHolder.postImage)
+
         viewHolder.textView.text = dataSet[position].subRedditName
+        viewHolder.postTitle.text = dataSet[position].title
+        viewHolder.postDesc.text = dataSet[position].description
+        viewHolder.postAuthor.text = "posted by ${dataSet[position].authorName}"
     }
 
     // Return the size of your dataset (invoked by the layout manager)

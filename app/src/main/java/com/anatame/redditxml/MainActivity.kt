@@ -1,5 +1,6 @@
 package com.anatame.redditxml
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -13,6 +14,7 @@ import kotlinx.coroutines.flow.collect
 
 class MainActivity : AppCompatActivity() {
     private val viewModel: MainActivityViewModel by viewModels()
+    private val context: Context = this@MainActivity
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,12 +22,8 @@ class MainActivity : AppCompatActivity() {
 
         homeRecyclerView.layoutManager = LinearLayoutManager(this)
         lifecycleScope.launchWhenStarted {
-//            Log.d("apires", viewModel.state.value.posts.toString())
-//            val items = viewModel.state.value.posts
-//            homeRecyclerView.adapter = HomeRecyclerViewAdapter(items)
-
             viewModel.state.collect{ it ->
-                homeRecyclerView.adapter = HomeRecyclerViewAdapter(it.posts)
+                homeRecyclerView.adapter = HomeRecyclerViewAdapter(it.posts, context)
             }
         }
 
