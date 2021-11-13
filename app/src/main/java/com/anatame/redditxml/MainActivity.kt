@@ -20,12 +20,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        homeRecyclerView.layoutManager = LinearLayoutManager(this)
-        lifecycleScope.launchWhenStarted {
-            viewModel.state.collect{ it ->
-                homeRecyclerView.adapter = HomeRecyclerViewAdapter(it.posts, context)
-            }
-        }
+//        homeRecyclerView.layoutManager = LinearLayoutManager(this)
+//        lifecycleScope.launchWhenStarted {
+//            viewModel.state.collect{ it ->
+//                homeRecyclerView.adapter = HomeRecyclerViewAdapter(it.posts, context)
+//            }
+//        }
 
 
 

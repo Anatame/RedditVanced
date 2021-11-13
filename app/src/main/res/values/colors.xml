@@ -14,9 +14,12 @@
     <color name="violetBlue">#6D72C3</color>
     <color name="Lavender">#E5D4ED</color>
 
-    <color name="PrimaryBackground">#333439</color>
+    <color name="PrimaryBackground">#3B3F40</color>
     <color name="CardBackground">#292A2E</color>
     <color name="TextAccent">#CCCCCC</color>
+    <color name="Unselected">#DADADA</color>
+    <color name="FilterBarBackground">#262628</color>
+
 
 
 

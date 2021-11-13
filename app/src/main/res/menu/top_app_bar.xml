@@ -2,8 +2,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/edit"
-        android:title="Edit"
+        android:id="@+id/search"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="search"
         android:contentDescription="search"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="always" />
 </menu>
