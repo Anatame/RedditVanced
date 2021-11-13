@@ -7,4 +7,22 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="darkPurple">#1D1128</color>
+    <color name="darkLiver">#514F59</color>
+    <color name="plumpPurple">#5941A9</color>
+    <color name="violetBlue">#6D72C3</color>
+    <color name="Lavender">#E5D4ED</color>
+
+    <color name="PrimaryBackground">#333439</color>
+    <color name="CardBackground">#292A2E</color>
+    <color name="TextAccent">#CCCCCC</color>
+
+
+
+
+
+
+
+
 </resources>
