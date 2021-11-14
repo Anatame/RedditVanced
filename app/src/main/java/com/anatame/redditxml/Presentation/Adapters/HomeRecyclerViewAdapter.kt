@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.anatame.redditxml.R
 import com.anatame.redditxml.data.remote.PostDetail
@@ -29,8 +30,10 @@ class HomeRecyclerViewAdapter(private val dataSet: List<PostDetail>, private val
         val postTitle: TextView = view.findViewById(R.id.tv_postTitle)
         val postDesc: TextView = view.findViewById(R.id.tv_postDescription)
         val postAuthor: TextView = view.findViewById(R.id.tv_poster)
+        val postCardView: CardView = view.findViewById(R.id.cardView)
 
         init {
+
             // Define click listener for the ViewHolder's View.
         }
     }

@@ -8,8 +8,10 @@
         <entry key="..\:/AndroidStudioProjects/RedditXml/app/src/main/res/drawable/ic_launcher_background.xml" value="0.21770833333333334" />
         <entry key="..\:/AndroidStudioProjects/RedditXml/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/AndroidStudioProjects/RedditXml/app/src/main/res/layout/custom_toolbar.xml" value="0.264" />
-        <entry key="..\:/AndroidStudioProjects/RedditXml/app/src/main/res/layout/home_recyclerview_item.xml" value="0.34285714285714286" />
+        <entry key="..\:/AndroidStudioProjects/RedditXml/app/src/main/res/layout/home_recyclerview_item.xml" value="0.264" />
+        <entry key="..\:/AndroidStudioProjects/RedditXml/app/src/main/res/layout/nav_drawer_menu.xml" value="0.12817028985507245" />
         <entry key="..\:/AndroidStudioProjects/RedditXml/app/src/main/res/layout/nav_header.xml" value="0.12409420289855072" />
+        <entry key="..\:/AndroidStudioProjects/RedditXml/app/src/main/res/layout/top_app_bar.xml" value="0.12817028985507245" />
         <entry key="..\:/AndroidStudioProjects/RedditXml/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.19739583333333333" />
         <entry key="..\:/AndroidStudioProjects/RedditXml/app/src/main/res/menu/nav_drawer_menu.xml" value="0.19739583333333333" />
         <entry key="..\:/AndroidStudioProjects/RedditXml/app/src/main/res/menu/navigation_drawer.xml" value="0.19739583333333333" />

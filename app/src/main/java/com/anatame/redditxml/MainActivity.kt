@@ -4,6 +4,8 @@ import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.Menu
+import android.view.MenuInflater
 import android.view.MenuItem
 import android.widget.Toast
 import androidx.activity.viewModels
@@ -31,6 +33,7 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(materialToolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.setHomeButtonEnabled(true)
+        materialToolbar.showOverflowMenu()
 
 
         navView.setNavigationItemSelectedListener {
@@ -50,6 +53,13 @@ class MainActivity : AppCompatActivity() {
                 homeRecyclerView.adapter = HomeRecyclerViewAdapter(it.posts, context)
             }
         }
+    }
+
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        val inflator = menuInflater
+        inflator.inflate(R.menu.top_app_bar, menu)
+        return true
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

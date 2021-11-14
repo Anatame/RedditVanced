@@ -6,13 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/drawerLayout"
-    android:background="@color/PrimaryBackground"
+    android:background="@color/BackgroundColor"
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/PrimaryBackground"
+        android:background="@color/BackgroundColor"
         tools:context=".MainActivity">
 
         <com.google.android.material.appbar.MaterialToolbar
@@ -25,6 +25,8 @@
             app:menu="@menu/top_app_bar"
             app:navigationIcon="@drawable/ic_baseline_menu_24"
             app:title="Popular"
+            app:navigationIconTint="@color/UnselectedColor"
+            android:background="@color/ToolbarBackground"
             app:titleCentered="true" />
 
         <androidx.recyclerview.widget.RecyclerView
@@ -41,7 +43,8 @@
             android:id="@+id/bottomNavigationView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:backgroundTint="@color/PrimaryBackground"
+            app:itemIconTint="@color/UnselectedColor"
+            app:backgroundTint="@color/ToolbarBackground"
             app:labelVisibilityMode="unlabeled"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -66,7 +69,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:text="Best"
-                android:textColor="@color/Unselected"
+                android:textColor="@color/SelectedColor"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
