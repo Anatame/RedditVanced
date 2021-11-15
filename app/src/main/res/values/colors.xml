@@ -16,12 +16,19 @@
 
     <color name="TextAccent">#EFEFEF</color>
 <!--    <color name="FilterBarBackground">#262628</color>-->
-    <color name="ToolbarBackground">#2E2E2E</color>
-    <color name="FilterBarBackground">#252525</color>
-    <color name="CardBackgroundColor">#0DD0BCFF</color>
+    <color name="ToolbarBackground">#1C1B1F</color>
+    <color name="FilterBarBackground">#00D59696</color>
+
     <color name="BackgroundColor">#1F1F1F</color>
     <color name="UnselectedColor">#969696</color>
     <color name="SelectedColor">#FFFFFF</color>
+
+    <color name="AccentDark">#4DD0E1</color>
+    <color name="TextAccentColor">#B2EBF2</color>
+    <color name="TextHead">#E6E1E5</color>
+    <color name="TextSubtitle">#E6E1E5</color>
+    <color name="CardBackgroundColor">#1C1B1F</color>
+
 
 
 

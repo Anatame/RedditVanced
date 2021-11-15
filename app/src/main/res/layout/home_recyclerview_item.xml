@@ -13,7 +13,7 @@
     android:layout_marginLeft="6dp"
     app:strokeWidth="0dp"
     app:cardPreventCornerOverlap="false"
-    app:cardCornerRadius="6dp"
+    app:cardCornerRadius="12dp"
     app:cardBackgroundColor="@color/CardBackgroundColor"
     app:layout_scrollEffect="compress"
     >

@@ -19,6 +19,7 @@
             android:id="@+id/materialToolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:titleTextColor="@color/AccentDark"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -39,17 +40,30 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
+        <com.ismaeldivita.chipnavigation.ChipNavigationBar
             android:id="@+id/bottomNavigationView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:itemIconTint="@color/UnselectedColor"
-            app:backgroundTint="@color/ToolbarBackground"
-            app:labelVisibilityMode="unlabeled"
+            android:layout_height="64dp"
+            android:layout_gravity="bottom"
+            android:background="@color/ToolbarBackground"
+            app:cnb_menuResource="@menu/bottom_navigation_menu"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:menu="@menu/bottom_navigation_menu" />
+           />
+
+<!--        <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--            android:id="@+id/bottomNavigationView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:itemIconTint="@color/UnselectedColor"-->
+<!--            app:backgroundTint="@color/ToolbarBackground"-->
+<!--            app:labelVisibilityMode="unlabeled"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:menu="@menu/bottom_navigation_menu"-->
+<!--            app:itemActiveIndicatorStyle="@color/BottomBarIndicator"/>-->
 
         <RelativeLayout
             android:id="@+id/relativeLayout"
